@@ -21,15 +21,15 @@ module.exports = {
   },
   buildModules: [
     // Simple usage
-    '@nuxtjs/vuetify',
-
-    // With options
-    ['@nuxtjs/vuetify', { /* module options */ }]
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  css: [
+    "~/assets/main.css"
+  ],
   /*
   ** Build configuration
   */
