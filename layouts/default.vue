@@ -1,15 +1,20 @@
-
 <template>
     <div>
         <header>
             <nav>
-                <nuxt-link to="/">Home</nuxt-link>
-                <nuxt-link to="/new">New</nuxt-link>
-                <nuxt-link to="/show">Show</nuxt-link>
-                <nuxt-link to="/ask">Ask</nuxt-link>
-                <nuxt-link to="/jobs">Jobs</nuxt-link>
+                <nuxt-link class="link underline-hover" to="/">Home</nuxt-link>
+                <nuxt-link class="link underline-hover" to="/new">New</nuxt-link>
+                <nuxt-link class="link underline-hover" to="/show">Show</nuxt-link>
+                <nuxt-link class="link underline-hover" to="/ask">Ask</nuxt-link>
+                <nuxt-link class="link underline-hover" to="/jobs">Jobs</nuxt-link>
             </nav>
         </header>
-         <Nuxt />
+        <nuxt></nuxt>
     </div>
 </template>
+<style>
+.nuxt-link-exact-active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+</style>
