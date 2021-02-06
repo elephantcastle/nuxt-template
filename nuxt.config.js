@@ -18,7 +18,14 @@ module.exports = {
       aggregateTimeout: 300,
       poll: 1000
     }
-    },
+  },
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/vuetify',
+
+    // With options
+    ['@nuxtjs/vuetify', { /* module options */ }]
+  ],
   /*
   ** Customize the progress bar color
   */
