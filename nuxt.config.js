@@ -13,6 +13,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  watchers: {
+    webpack: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+    },
   /*
   ** Customize the progress bar color
   */
@@ -24,6 +30,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+   vendor: ["axios"],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
