@@ -1,18 +1,19 @@
 <template>
-  <div class="code">
-    <ul class="list pa2">
-      <li v-for="item in items" :key="item.id">
-        {{item.title}}
-      </li>
-    </ul>
-  </div>
+    <div>
+        <h1>Top</h1>
+        <Items>
+        </Items>
+    </div>
 </template>
+
 <script>
-import { mapState } from "vuex"
+import Items from "~/components/Items.vue"
 export default {
-  computed: mapState([
-    "ids",
-    "items"
-  ])
+    components: {
+        Items
+    },
+    async fetch({ store }) {
+        await store.dispatch("LOAD_ITEMS", "topstories.json")
+    }
 }
 </script>
