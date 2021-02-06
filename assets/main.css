@@ -1,3 +1,14 @@
 .list-container{
     font-size: 20px;
 }
+
+.page-enter,
+/* Makes page disappear immediately */
+.page-leave-active {
+  opacity: 0;
+}
+
+/* eases in a bit smoother */
+.page-enter-active {
+  transition: opacity .3s ease-in;
+}

@@ -1,4 +1,5 @@
 # templatenuxt
+First project in Nuxt to teach myself basic usage
 
 > Nuxt.js project
 
